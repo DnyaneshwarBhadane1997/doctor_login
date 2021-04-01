@@ -1,0 +1,69 @@
+<ng-container >
+  <mat-toolbar class="example-header">
+    <!-- <span class="navbar-toggler-icon"><button ></button></span> -->
+    <button type="button" mat-button (click)="sidenav.toggle()" class="d-lg-block">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+      </svg>
+    </button>
+    <div class="row" style="width: inherit;">
+      <div class="col-md-10 text-white">
+        <h1>XYZ COMPANY</h1>
+      </div>
+      <div class="col-md-2 text-white">
+        <h1>LOGO</h1>
+      </div>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="example-container">
+
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav" [fixedInViewport]="false"
+      [fixedTopGap]="options.value.top" [fixedBottomGap]="options.value.bottom">
+      <div class="row">
+        <div class="col">
+  
+    <button class="btn btn-block text-white" (click)="doctorList()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-plus" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 7.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0v-1.5H6a.5.5 0 0 1 0-1h1.5V8a.5.5 0 0 1 .5-.5z"/>
+              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+            </svg> Doctors list
+          </button>
+        </div>       
+      </div>
+      <div class="row">
+        <div class="col">
+          
+          <button class="btn btn-block text-white" (click)="logoutf()">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+          </svg>  logout
+        </button>
+      </div>
+      </div>
+    </mat-sidenav>
+    <router-outlet></router-outlet>
+    <!-- <mat-sidenav-content [formGroup]="options">
+        <p><mat-checkbox formControlName="fixed">Fixed</mat-checkbox></p>
+        <p><mat-form-field>
+          <mat-label>Top gap</mat-label>
+          <input matInput type="number" formControlName="top">
+        </mat-form-field></p>
+        <p><mat-form-field>
+          <mat-label>Bottom gap</mat-label>
+          <input matInput type="number" formControlName="bottom">
+        </mat-form-field></p>
+        <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>
+      </mat-sidenav-content> -->
+  </mat-sidenav-container>
+
+  
+
+</ng-container>
