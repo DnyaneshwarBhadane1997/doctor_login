@@ -1,0 +1,85 @@
+// If you want to override variables do it here
+@import "_variables";
+
+// Import styles
+
+// If you want to add something do it here
+@import "custom";
+
+.app-header {
+  background-color: #3972b5;
+  height: 10vh;
+}
+
+.header-fixed .app-body {
+  margin-top: 10vh;
+}
+
+.sidebar-fixed .app-header + .app-body .sidebar {
+  height: calc(100vh - 10vh);
+}
+
+.nav-link,
+.nav-link .nav-icon {
+  font-size: 25px !important;
+}
+
+.sidebar .nav-link {
+  padding: 1.75rem 1rem;
+}
+
+.app-header .navbar-brand img {
+  width: 250px;
+  height: 50px;
+}
+
+.app-header .navbar-toggler {
+  border: 1px solid gray;
+  margin-left: 5px;
+}
+
+.app-header .navbar-toggler-icon {
+  color: #fff;
+}
+
+.app-header .img-avatar {
+  border: 2px solid gray;
+}
+
+.app-header .navbar-brand {
+  width: 250px;
+}
+@media (min-width: 992px) {
+  .sidebar .nav,
+  .sidebar .sidebar-nav,
+  .sidebar-fixed .sidebar {
+    width: 250px;
+  }
+}
+.sidebar-lg-show.sidebar-fixed .main,
+html:not([dir="rtl"]) .sidebar-lg-show.sidebar-fixed .app-footer,
+html:not([dir="rtl"]) .sidebar-show.sidebar-fixed .main,
+html:not([dir="rtl"]) .sidebar-show.sidebar-fixed .app-footer {
+  margin-left: 250px !important;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar-lg-show.sidebar-fixed .main, html:not([dir=rtl]) .sidebar-lg-show.sidebar-fixed .app-footer, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .main, html:not([dir=rtl]) .sidebar-show.sidebar-fixed .app-footer{
+        margin-left: 0px !important;
+    }
+}
+
+html:not([dir=rtl]) .sidebar {
+    margin-left: -250px;
+}
+
+input.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+.globalTextFont {
+  font-size: 18px;
+}
+.globalHeaderFont {
+  font-size: 20px;
+}

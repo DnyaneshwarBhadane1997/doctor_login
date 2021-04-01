@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-md-1" style="width:25pt;background-color: blue;">
+  </div>
+  <div class="col-md" style="margin-left: 25pt;">
+        <div class="row">
+          <div class="col-11"><h1> <b> XYZ company</b></h1></div>
+          <div class="col-1"><h1><b>LOGO </b></h1> </div>
+          <div style="background-image: url('../../assets/images/train_image2.jpg')">
+            <div class="row" >
+              <div class="col-md-3" style="margin-top :200px; height:400px ; margin-left :100px">
+                <div class="card-group">
+                  <div class="card p-4">
+                    <h2 class="card-title text-primary text-center" > Login Details</h2>
+                    <div class="card-body">
+                        <div >
+                          <form [formGroup]="loginForm">
+                           
+                            <div class="input-group mb-3">
+                              
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Username"
+                                required
+                                formControlName="name"
+                              
+                              />
+                            
+                            </div>
+                            <div class="input-group mb-4">
+                              
+                              <input
+                                type="password"
+                                class="form-control"
+                                placeholder="Password"
+                                required
+                                formControlName="password"
+                                
+                              />
+                            
+                            </div>
+                            <div class="row">
+                              <div class="col-12 text-center">
+                                <button
+                                  type="button"
+                                  class="btn btn-primary px-4 w-100"
+                                  [disabled]="loading"
+                                  (click)="onSubmit()"
+                                >
+                                  Login
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+      </div>
+      </div>
+  </div>
+    
+  </div>
+  
